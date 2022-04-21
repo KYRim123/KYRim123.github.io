@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#toast{
+    position: fixed;
+    top: 32px;
+    right: 32px;
+    z-index: 100;
+}
+  
+.toast{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-left: 4px solid;
+    border-radius: 4px;
+    padding: 20px 0;
+    min-width: 400px;
+    max-width: 450px;
+    margin: 10px;
+    transition: all linear .3s;
+}
+
+/* keyfarm */
+@keyframes slideInLeft{
+    from{
+        opacity: 0;
+        transform: translateX(calc(100% + 50px));
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeOut{
+    to{
+        opacity: 0;
+    }
+}
+
+.toast__body{
+    flex-grow: 1;
+}
+
+/* .toast__title{
+
+} */
+
+.toast__msg{
+    line-height: 1.6;
+}
+.toast__icon{
+    padding: 10px;
+    font-size: 20px;
+}
+.toast__close{
+    font-size: 20px;
+    color:rgba(80, 82, 76,0.5);
+    margin: 10px;
+}
+/* khoang cach giua cac toast */
+.toast + .toast{
+    margin-top: 24px;
+}
+/* set mau sac */
+.toast--success{
+    border-color: rgb(37, 179, 37);
+    box-shadow: 0 5px 8px rgba(37, 179, 37, 0.5);
+}
+.toast--infor{
+    border-color: rgb(37, 37, 192);
+    box-shadow: 0 5px 8px rgba(37, 37, 192, 0.5);
+}
+.toast--warning{
+    border-color: rgb(192, 192, 52);
+    box-shadow: 0 5px 8px rgba(192, 192, 52, 0.5);
+}
+.toast--error{
+    border-color: rgb(192, 34, 34);
+    box-shadow: 0 5px 8px rgba(192, 34, 34, 0.5);
+}
+
+.toast--success .toast__icon{
+   color: rgb(37, 179, 37);
+}
+
+.toast--infor .toast__icon{
+   color: rgb(37, 37, 192);
+}
+
+.toast--warning .toast__icon{
+   color: rgb(192, 192, 52);
+}
+
+.toast--error .toast__icon{
+   color: rgb(192, 34, 34);
+}
+
+/* css button */
+
+
+#btn{
+    display: flex;
+    height: 100vh;
+    align-items: center; 
+    justify-content: space-around;
+}
+
+
+ .btn {
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: rgb(236, 222, 222);
+    padding: 12px 48px;
+    border-radius: 50px;
+    cursor: pointer;
+    min-width: 120px;
+  }
+
+  .btn:hover{
+    opacity: 0.5;
+  }
+
+ .btn--success {
+    background-color: rgb(37, 179, 37);
+  }
+
+  .btn--error {
+    background-color: rgb(192, 34, 34);
+  }
+
+  .btn--infor{
+    background-color: rgb(37, 37, 192);
+  }
+
+  .btn--warning{
+    background-color: rgb(192, 192, 52);
+  }
+
+
+
+
+
+
