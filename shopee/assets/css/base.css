@@ -4,6 +4,7 @@
     --text-color: #333;
     --primary-color: rgb(205, 76, 21);
     --start-yellow:rgb(213, 194, 23);
+    --header-sort-bar-height: 46px;
 }
 
 *{
@@ -21,16 +22,6 @@ html {
     box-sizing: border-box;
 }
 /* responsive */
-.grid {
-    width: 1200px;
-    max-width: 100%;
-    margin: 0 auto;
-    padding-top: 15px;
-}
-
-.grid__full-with {
-    width: 100%;
-}
 
 .grid__row {
     display: flex;
