@@ -383,6 +383,10 @@
     max-width: 1200px;
     
 }
+.header__mobile-search--icon{
+    font-size: 2.6rem;
+    color: var(--white-color);
+}
 .header__logo{
     width: 200px;
 }
@@ -630,8 +634,8 @@
 
 /* app container */
 .app__container {
-    background-color: #9c4141;
-    margin-top: 120px;
+    background-color: #c1bcbc;
+    margin-top: 110px;
     padding-top: 10px;
 }
 .category{
